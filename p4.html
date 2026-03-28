@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Drag & Drop Using JS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <div class="container">
+    <div class="container">
         <div id="left">
             <div class="list" draggable="true"><img src="drag_drop_icon.png">List item 1</div>
             <div class="list" draggable="true"><img src="drag_drop_icon.png">List item 2</div>
@@ -15,11 +16,10 @@
         </div>
         <div id="right"></div>
     </div>
-</body>
-<script>
-    let lists=document.getElementsByClassName("list");
-    let rightBox=document.getElementById("right");
-    let leftBox=document.getElementById("left");
+    <script>
+        let lists=document.getElementsByClassName("list");
+        let rightBox=document.getElementById("right");
+        let leftBox=document.getElementById("left");
 
         for(list of lists){
             list.addEventListener("dragstart",function(e){
@@ -41,5 +41,7 @@
                 });
             })
         }
-</script>
+
+    </script>
+</body>
 </html>
