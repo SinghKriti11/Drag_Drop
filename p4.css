@@ -27,3 +27,8 @@
     align-items: center;
     cursor: grab;
 }
+.list img{
+    width: 10px;
+    margin-left: 15px;
+    margin-right: 20px;
+}
